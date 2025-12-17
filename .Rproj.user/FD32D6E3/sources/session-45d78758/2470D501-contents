@@ -1,0 +1,72 @@
+---
+title: "about"
+editor: visual
+---
+
+---
+title: ""
+---
+
+```{=html}
+<script>
+document.addEventListener("mousemove", function(e){
+  const sparkle = document.createElement("div");
+  sparkle.style.position = "absolute";
+  sparkle.style.width = "8px";
+  sparkle.style.height = "8px";
+  sparkle.style.background = "radial-gradient(circle, #f8c8d8, #fff)";
+  sparkle.style.borderRadius = "50%";
+  sparkle.style.pointerEvents = "none";
+  sparkle.style.left = e.pageX + "px";
+  sparkle.style.top = e.pageY + "px";
+  sparkle.style.opacity = 1;
+  sparkle.style.zIndex = 9999;
+  document.body.appendChild(sparkle);
+
+  // Animate and remove sparkle
+  let opacity = 1;
+  let size = 8;
+  const animate = setInterval(() => {
+    opacity -= 0.05;
+    size += 1;
+    sparkle.style.opacity = opacity;
+    sparkle.style.width = size + "px";
+    sparkle.style.height = size + "px";
+    if(opacity <= 0){
+      clearInterval(animate);
+      sparkle.remove();
+    }
+  }, 30);
+});
+</script>
+```
+
+:::::::: grid
+::: g-col-6
+## A bit about her..
+
+Originally from Texas, Coda was adopted from Fort Collins' *Animal Friends Alliance* in January 2023. Though she was a full-grown two-year-old cat, she weighed only 5 pounds. From the start, she was incredibly vocal and affectionate- although still very cautious and timid around strangers.
+
+## Some quirks..
+
+-   Although very vocal, she doesn't have a proper "meow". Instead, she has a whole vocabulary of "chirps", "squeaks", and the occasional high-pitched sustained "SQUEEE!".
+
+-   Coda strictly enforces a bedtime for the house- crying insistently if everyone isn't settled into the bedroom by midnight.
+
+-   Since discovering her love of diced cucumbers, she now assumes anything being chopped in the kitchen must be cucumbers and will beg relentlessly until she’s shown—and convinced—that it’s something else.
+:::
+
+:::::: g-col-6
+::::: grid
+::: g-col-6
+![A scrawny Coda her first month in her new home.](images/scrawny.jpg){width="350"}
+:::
+
+::: g-col-6
+![Coda enjoys the sunshine while harshly judging the neighbors.](images/windowCoda.jpg){fig-align="center" width="300px"}
+
+![Hanging out with her dad.](images/Gaming.jpg){width="300px"}
+:::
+:::::
+::::::
+::::::::

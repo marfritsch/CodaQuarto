@@ -1,0 +1,31 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Welcome!"
+  navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "About"
+        href: about.qmd
+      - text: "Food Ratings"
+        href: food.qmd
+      - text: "Toy Ratings"
+        href: toys.qmd
+      - text: "Adoption Resources"
+        href: adoption.qmd
+
+format:
+  html:
+    theme: minty
+    toc: true
+    anchor-sections: false
+    css: styles.css
+    grid: 
+      sidebar-width: 0px
+      body-width: 1600px
+      margin-width: 0px
+      gutter-width: 1.5rem
+  

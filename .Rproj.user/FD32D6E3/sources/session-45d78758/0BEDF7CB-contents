@@ -1,0 +1,46 @@
+---
+title: "toys"
+editor: visual
+---
+
+---
+title: "Toy Ratings"
+---
+
+```{=html}
+<script>
+document.addEventListener("mousemove", function(e){
+  const sparkle = document.createElement("div");
+  sparkle.style.position = "absolute";
+  sparkle.style.width = "8px";
+  sparkle.style.height = "8px";
+  sparkle.style.background = "radial-gradient(circle, #f8c8d8, #fff)";
+  sparkle.style.borderRadius = "50%";
+  sparkle.style.pointerEvents = "none";
+  sparkle.style.left = e.pageX + "px";
+  sparkle.style.top = e.pageY + "px";
+  sparkle.style.opacity = 1;
+  sparkle.style.zIndex = 9999;
+  document.body.appendChild(sparkle);
+
+  // Animate and remove sparkle
+  let opacity = 1;
+  let size = 8;
+  const animate = setInterval(() => {
+    opacity -= 0.05;
+    size += 1;
+    sparkle.style.opacity = opacity;
+    sparkle.style.width = size + "px";
+    sparkle.style.height = size + "px";
+    if(opacity <= 0){
+      clearInterval(animate);
+      sparkle.remove();
+    }
+  }, 30);
+});
+</script>
+```
+
+# Coda's Toy Preferences
+
+![Progression of Sweet Rat Baby Coda's interest in different toys since we first adopted her.](images/CatPlot.png){fig-align="left"}

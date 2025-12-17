@@ -1,0 +1,2 @@
+"0","#install.packages(""remotes"")"
+"0","remotes::install_github(""R-CoderDotCom/ggcats@main"")"
