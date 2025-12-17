@@ -1,0 +1,100 @@
+---
+title: "food"
+editor: visual
+---
+
+---
+title: ""
+---
+
+```{=html}
+<script>
+document.addEventListener("mousemove", function(e){
+  const sparkle = document.createElement("div");
+  sparkle.style.position = "absolute";
+  sparkle.style.width = "8px";
+  sparkle.style.height = "8px";
+  sparkle.style.background = "radial-gradient(circle, #f8c8d8, #fff)";
+  sparkle.style.borderRadius = "50%";
+  sparkle.style.pointerEvents = "none";
+  sparkle.style.left = e.pageX + "px";
+  sparkle.style.top = e.pageY + "px";
+  sparkle.style.opacity = 1;
+  sparkle.style.zIndex = 9999;
+  document.body.appendChild(sparkle);
+
+  // Animate and remove sparkle
+  let opacity = 1;
+  let size = 8;
+  const animate = setInterval(() => {
+    opacity -= 0.05;
+    size += 1;
+    sparkle.style.opacity = opacity;
+    sparkle.style.width = size + "px";
+    sparkle.style.height = size + "px";
+    if(opacity <= 0){
+      clearInterval(animate);
+      sparkle.remove();
+    }
+  }, 30);
+});
+</script>
+```
+
+
+# Coda's Snack Ratings
+
+Below is a highly scientific table of what Coda thinks of various foods:
+
+| Food | Rating | Notes | Price |
+|------------------|------------------|--------------------|------------------|
+| Weruva B.F.F. (wet) | ⭐⭐⭐⭐⭐ | Very healthy and is a favorite. | 💲💲💲💲💲 |
+| Tiki Cat (wet) | ⭐⭐⭐ | Eats it but pretends she doesn’t like it. | 💲💲💲💲 |
+| Pate Texture (any brand) | ⭐ | Liked it, changed her mind after we bought a ton of it. | 💲💲💲 |
+| Cucumber w. Churu | ⭐⭐⭐⭐⭐⭐⭐⭐⭐ | Delicious & hydrating (Breaks the rating scale). | 💲 |
+| Meow Mix (dry) | ⭐⭐⭐⭐ | Made her poo smell **truly** vile - thought she was sick. | 💲💲 |
+| Kirkland/Costco (dry) | ⭐⭐⭐⭐ | Healthier than most kibble- but still high in carbs. | 💲💲 |
+
+
+
+:::: grid
+
+::: g-col-3
+<div class="tenor-gif-embed"
+     data-postid="13956483314422020469"
+     data-share-method="host"
+     data-aspect-ratio="1.0641"
+     data-width="100%">
+</div>
+:::
+
+::: g-col-3
+<div class="tenor-gif-embed"
+     data-postid="13956483314422020469"
+     data-share-method="host"
+     data-aspect-ratio="1.0641"
+     data-width="100%">
+</div>
+:::
+
+::: g-col-3
+<div class="tenor-gif-embed"
+     data-postid="13956483314422020469"
+     data-share-method="host"
+     data-aspect-ratio="1.0641"
+     data-width="100%">
+</div>
+:::
+
+::: g-col-3
+<div class="tenor-gif-embed"
+     data-postid="13956483314422020469"
+     data-share-method="host"
+     data-aspect-ratio="1.0641"
+     data-width="100%">
+</div>
+:::
+
+::::
+
+<script type="text/javascript" async src="https://tenor.com/embed.js"></script>

@@ -1,0 +1,68 @@
+---
+title: "IDK What About"
+author: "Mariah Fritsch (Coda's Mommy)"
+format: html
+editor: visual
+---
+
+---
+title: "Coda (sweet princess baby)"
+---
+
+```{=html}
+<script>
+document.addEventListener("mousemove", function(e){
+  const sparkle = document.createElement("div");
+  sparkle.style.position = "absolute";
+  sparkle.style.width = "8px";
+  sparkle.style.height = "8px";
+  sparkle.style.background = "radial-gradient(circle, #f8c8d8, #fff)";
+  sparkle.style.borderRadius = "50%";
+  sparkle.style.pointerEvents = "none";
+  sparkle.style.left = e.pageX + "px";
+  sparkle.style.top = e.pageY + "px";
+  sparkle.style.opacity = 1;
+  sparkle.style.zIndex = 9999;
+  document.body.appendChild(sparkle);
+  
+
+  // Animate and remove sparkle
+  let opacity = 1;
+  let size = 8;
+  const animate = setInterval(() => {
+    opacity -= 0.05;
+    size += 1;
+    sparkle.style.opacity = opacity;
+    sparkle.style.width = size + "px";
+    sparkle.style.height = size + "px";
+    if(opacity <= 0){
+      clearInterval(animate);
+      sparkle.remove();
+    }
+  }, 30);
+});
+</script>
+```
+
+::::: grid
+::: g-col-6
+## Hello! 🐾
+
+**Use the menu above to explore:**
+
+-   A bit about her (and enjoy some adorable photos)
+-   Her opinions on cat food and her picky rankings
+-   Her toy preferences
+-   Adoption resources (so you can also become an obsessed pet parent!)
+
+<!-- PAWS image below the text -->
+
+![](images/PAWS.png){width="100%"}
+:::
+
+::: g-col-6
+<!-- Blankie image aligned with top of text -->
+
+![Coda, toasty on her heated blanket.](images/Blankie.jpg){width="50%"}
+:::
+:::::

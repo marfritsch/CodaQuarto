@@ -1,0 +1,74 @@
+---
+title: "adoption"
+editor: visual
+---
+
+---
+title: "Adoption Resources"
+---
+
+```{=html}
+<script>
+document.addEventListener("mousemove", function(e){
+  const sparkle = document.createElement("div");
+  sparkle.style.position = "absolute";
+  sparkle.style.width = "8px";
+  sparkle.style.height = "8px";
+  sparkle.style.background = "radial-gradient(circle, #f8c8d8, #fff)";
+  sparkle.style.borderRadius = "50%";
+  sparkle.style.pointerEvents = "none";
+  sparkle.style.left = e.pageX + "px";
+  sparkle.style.top = e.pageY + "px";
+  sparkle.style.opacity = 1;
+  sparkle.style.zIndex = 9999;
+  document.body.appendChild(sparkle);
+
+  // Animate and remove sparkle
+  let opacity = 1;
+  let size = 8;
+  const animate = setInterval(() => {
+    opacity -= 0.05;
+    size += 1;
+    sparkle.style.opacity = opacity;
+    sparkle.style.width = size + "px";
+    sparkle.style.height = size + "px";
+    if(opacity <= 0){
+      clearInterval(animate);
+      sparkle.remove();
+    }
+  }, 30);
+});
+</script>
+```
+
+## Considering adopting (or fostering)?
+
+Coda was adopted from:
+
+[Animal Friends Alliance](https://www.savinganimalstoday.org/) They focus on:
+
+ - Rescuing cats
+
+ - TNR (trap-neuter-return)
+
+ - Adoption counseling
+
+ - Fostering programs
+
+Please consider adopting — there are so many wonderful cats waiting for homes!
+
+:::::: grid
+::: g-col-4
+![Coda enjoying her wall.](images/Wall.jpg)
+:::
+
+::: g-col-4
+![Hanging with her 'Sharky'.](images/Sharky.jpg)
+:::
+
+::: g-col-4
+![The princess in her tower.](images/Tower.jpg)
+:::
+::::::
+
+::::::::
